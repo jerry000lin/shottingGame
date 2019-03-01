@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "5de934dd-e7cd-491a-88e9-124e50648655",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "black-sun-with-rays_2600": {
+      "ver": "1.0.3",
+      "uuid": "182a7571-4f8f-4d2b-9b58-c6e2f1e143fb",
+      "rawTextureUuid": "5de934dd-e7cd-491a-88e9-124e50648655",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 118,
+      "height": 118,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
