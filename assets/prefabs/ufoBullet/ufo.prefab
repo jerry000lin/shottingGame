@@ -12,80 +12,16 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "enemyBullet",
+    "_name": "ufo",
     "_objFlags": 0,
     "_parent": null,
-    "_children": [
-      {
-        "__id__": 2
-      }
-    ],
+    "_children": [],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 7
-      }
-    ],
-    "_prefab": {
-      "__id__": 8
-    },
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_zIndex": 0,
-    "groupIndex": 0,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "enemyBulletEntity",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 1
-    },
-    "_children": [],
-    "_active": true,
-    "_level": 3,
-    "_components": [
+        "__id__": 2
+      },
       {
         "__id__": 3
       },
@@ -94,10 +30,13 @@
       },
       {
         "__id__": 5
+      },
+      {
+        "__id__": 6
       }
     ],
     "_prefab": {
-      "__id__": 6
+      "__id__": 10
     },
     "_opacity": 255,
     "_color": {
@@ -109,8 +48,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 90,
+      "height": 90
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -119,8 +58,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": -30,
+      "y": -29,
       "z": 0
     },
     "_scale": {
@@ -141,7 +80,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_zIndex": 0,
-    "groupIndex": 4,
+    "groupIndex": 2,
     "_id": ""
   },
   {
@@ -149,13 +88,13 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 2
+      "__id__": 1
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "4b7ba522-2870-4fad-960f-71e37218dd4f"
+      "__uuid__": "816c4623-16db-4d84-9c1e-e97913854ba4"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -173,21 +112,11 @@
     "_id": ""
   },
   {
-    "__type__": "fdea8Xw83RHHoFstLICHi4j",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "_id": ""
-  },
-  {
     "__type__": "cc.PolygonCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 2
+      "__id__": 1
     },
     "_enabled": true,
     "tag": 0,
@@ -199,56 +128,116 @@
     "points": [
       {
         "__type__": "cc.Vec2",
-        "x": -10,
-        "y": 10
+        "x": -35,
+        "y": 12
       },
       {
         "__type__": "cc.Vec2",
-        "x": -0.1999999999999993,
-        "y": -10
+        "x": 0,
+        "y": -45
       },
       {
         "__type__": "cc.Vec2",
-        "x": 0.20000000000000107,
-        "y": -10
+        "x": 34.6,
+        "y": 12.6
       },
       {
         "__type__": "cc.Vec2",
-        "x": 10,
-        "y": 9.600000000000001
-      },
-      {
-        "__type__": "cc.Vec2",
-        "x": 10,
-        "y": 10
+        "x": 11,
+        "y": 12
       }
     ],
     "_id": ""
   },
   {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 1
-    },
-    "asset": {
-      "__uuid__": "f03658fa-7646-46fc-88b2-7b63e311906d"
-    },
-    "fileId": "abE5E2iVtBa6dLVR7Ml7Ey",
-    "sync": false
-  },
-  {
-    "__type__": "f79e2CrHbRAbLLnEoxk4TdG",
+    "__type__": "cc.Animation",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "wStart": 0,
-    "wSpeed": 0,
-    "rStart": 30,
-    "rSpeed": 100,
+    "_defaultClip": {
+      "__uuid__": "ebc52cca-9f6a-494a-b0e9-e4fab847bce9"
+    },
+    "_clips": [
+      {
+        "__uuid__": "ebc52cca-9f6a-494a-b0e9-e4fab847bce9"
+      },
+      {
+        "__uuid__": "2a800209-b01d-48f5-ae3f-47712c7497f5"
+      }
+    ],
+    "playOnLoad": false,
     "_id": ""
+  },
+  {
+    "__type__": "68769imlf5KgKAznul1GNsS",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "moveTime": 20,
+    "positionY": 400,
+    "gift": {
+      "__uuid__": "c00d12d0-badf-431f-9a48-a2e6f10d7a5a"
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "33dcepG9u1EaJ42KLq78xER",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "HP": 1,
+    "boom_prefab": {
+      "__uuid__": "06809c07-2aed-49aa-a659-271761a70ac1"
+    },
+    "enemyBulletSetting": [
+      {
+        "__id__": 7
+      },
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      }
+    ],
+    "freqTime": 6.6,
+    "_id": ""
+  },
+  {
+    "__type__": "bulletSetting",
+    "startAxis": -75,
+    "endAxis": 75,
+    "enemyBulletPrefab": {
+      "__uuid__": "628b3d8b-04c9-4c11-b672-c379050e6cf0"
+    },
+    "eachNumber": 5
+  },
+  {
+    "__type__": "bulletSetting",
+    "startAxis": -180,
+    "endAxis": 180,
+    "enemyBulletPrefab": {
+      "__uuid__": "24c8d15e-38fa-4883-83ce-c7ebbe4ead8c"
+    },
+    "eachNumber": 8
+  },
+  {
+    "__type__": "bulletSetting",
+    "startAxis": 0,
+    "endAxis": 360,
+    "enemyBulletPrefab": {
+      "__uuid__": "38c0146e-fa44-41ed-bbfa-75d6da3e94d4"
+    },
+    "eachNumber": 15
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -256,9 +245,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f03658fa-7646-46fc-88b2-7b63e311906d"
+      "__uuid__": "176c4651-caf1-4fb8-acd9-f316db796b04"
     },
-    "fileId": "a31B/stqZDqqbiCrOo14P+",
+    "fileId": "29DuR0BgpBlaahksr4IwD0",
     "sync": false
   }
 ]

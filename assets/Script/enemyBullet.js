@@ -2,7 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        wStart:0,
         wSpeed:0,
         rStart:0,
         rSpeed:0

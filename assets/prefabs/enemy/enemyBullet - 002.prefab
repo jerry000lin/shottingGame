@@ -72,7 +72,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_zIndex": 0,
-    "groupIndex": 0,
+    "groupIndex": 4,
     "_id": ""
   },
   {
@@ -309,9 +309,8 @@
       "__id__": 1
     },
     "_enabled": true,
-    "wStart": 0,
-    "wSpeed": 3,
-    "rStart": 7,
+    "wSpeed": 0,
+    "rStart": 30,
     "rSpeed": 30,
     "_id": ""
   },

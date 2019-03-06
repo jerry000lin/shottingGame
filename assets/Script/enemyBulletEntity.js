@@ -12,7 +12,7 @@ cc.Class({
     update (dt) {
         this.node.y -= this.enemyBullet.rSpeed*dt
         if(this.node.y>this.node.parent.parent.height||this.node.y<-this.node.parent.parent.height){
-            this.node.destroy()
+            this.node.parent.destroy()
         }
     }
 });

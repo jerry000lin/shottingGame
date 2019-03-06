@@ -26,14 +26,17 @@
         "__id__": 3
       },
       {
-        "__id__": 4
+        "__id__": 8
       },
       {
-        "__id__": 5
+        "__id__": 9
+      },
+      {
+        "__id__": 10
       }
     ],
     "_prefab": {
-      "__id__": 6
+      "__id__": 11
     },
     "_opacity": 255,
     "_color": {
@@ -55,8 +58,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 358,
-      "y": 578,
+      "x": 1,
+      "y": 525,
       "z": 0
     },
     "_scale": {
@@ -91,7 +94,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "816c4623-16db-4d84-9c1e-e97913854ba4"
+      "__uuid__": "1e7b0da6-bcbc-44c9-82d8-3f11370b8e1d"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -116,26 +119,62 @@
       "__id__": 1
     },
     "_enabled": true,
-    "HP": 60,
-    "ySpeed": 150,
+    "HP": 20,
     "boom_prefab": {
       "__uuid__": "06809c07-2aed-49aa-a659-271761a70ac1"
     },
-    "enemyPositionY": 400,
-    "enemyBulletPrefab": [
+    "enemyBulletSetting": [
       {
-        "__uuid__": "628b3d8b-04c9-4c11-b672-c379050e6cf0"
+        "__id__": 4
       },
       {
-        "__uuid__": "24c8d15e-38fa-4883-83ce-c7ebbe4ead8c"
+        "__id__": 5
       },
       {
-        "__uuid__": "38c0146e-fa44-41ed-bbfa-75d6da3e94d4"
+        "__id__": 6
+      },
+      {
+        "__id__": 7
       }
     ],
     "freqTime": 10,
-    "eachNumber": 50,
     "_id": ""
+  },
+  {
+    "__type__": "bulletSetting",
+    "startAxis": 0,
+    "endAxis": 360,
+    "enemyBulletPrefab": {
+      "__uuid__": "7b325cdd-83c4-44c5-a9be-890162f138bb"
+    },
+    "eachNumber": 20
+  },
+  {
+    "__type__": "bulletSetting",
+    "startAxis": -45,
+    "endAxis": 45,
+    "enemyBulletPrefab": {
+      "__uuid__": "c7386716-8be1-4eca-bb7d-7f185f33a842"
+    },
+    "eachNumber": 8
+  },
+  {
+    "__type__": "bulletSetting",
+    "startAxis": 0,
+    "endAxis": 360,
+    "enemyBulletPrefab": {
+      "__uuid__": "082e4cc3-f1c2-494c-8824-dc71ab1d9da3"
+    },
+    "eachNumber": 20
+  },
+  {
+    "__type__": "bulletSetting",
+    "startAxis": 0,
+    "endAxis": 360,
+    "enemyBulletPrefab": {
+      "__uuid__": "f03658fa-7646-46fc-88b2-7b63e311906d"
+    },
+    "eachNumber": 20
   },
   {
     "__type__": "cc.PolygonCollider",
@@ -198,14 +237,26 @@
     "_id": ""
   },
   {
+    "__type__": "f0a2eExxGdLhYwjr8pWW03y",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "moveTime": 5,
+    "positionY": 350,
+    "_id": ""
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "b46f3780-51b2-4864-aefe-d366671c2796"
+      "__uuid__": "e1763831-d98e-4b29-a3da-8ee13c61e823"
     },
-    "fileId": "16Qgio5XhDO47zTWwxZeXh",
+    "fileId": "65fMwAL/1IaqdjxtHuY7um",
     "sync": false
   }
 ]
