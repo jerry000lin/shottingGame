@@ -572,8 +572,9 @@
     "enemyBulletGroup": {
       "__id__": 9
     },
-    "maxEnemyNumber": 5,
-    "ufoMakingTime": 5,
+    "maxMosterNumber": 3,
+    "maxUfoNumber": 1,
+    "ufoMakingTime": 60,
     "main": {
       "__id__": 3
     },

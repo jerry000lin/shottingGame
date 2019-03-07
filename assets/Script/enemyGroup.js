@@ -11,7 +11,10 @@ cc.Class({
             default:null,
             type:cc.Node
         },
-        maxEnemyNumber:0,
+        maxMosterNumber:0,
+        maxUfoNumber:{
+            default:1
+        },
         ufoMakingTime:0,
         main:cc.Node
     },
@@ -21,11 +24,15 @@ cc.Class({
         this.enemyNumber = 1
 
         this.ufoCount = 0
+        this.ufoDestoryCount = 0
 
         this.makeNewEnemy()
         this.schedule(this.makeUFO, this.ufoMakingTime);
     },    
     makeNewEnemy(){
+        if(this.ufoCount>0){
+            return
+        }
         var newEnemy = cc.instantiate(this.enemyPrefab[0])
         var enemyPosition = this.getNewEnemyPositon(newEnemy)
         newEnemy.setPosition(enemyPosition)
@@ -35,11 +42,16 @@ cc.Class({
     },
 
     makeUFO(){
+        if(this.ufoCount>=this.maxUfoNumber){
+            return
+        }
         var newEnemy = cc.instantiate(this.enemyPrefab[1])
+
+        newEnemy.getComponent("enemy").init(this.ufoDestoryCount)
+
         var enemyPosition = cc.v2(0,(this.node.height+newEnemy.height)/2);
         newEnemy.setPosition(enemyPosition)
         this.node.addChild(newEnemy)
-
         this.ufoCount++
     },
 
@@ -53,15 +65,19 @@ cc.Class({
     mosterDestory(){
         this.main.getComponent("main").gainScore(100)
         this.enemyCount--
-        if(this.enemyNumber<this.maxEnemyNumber){
+        if(this.enemyNumber<this.maxMosterNumber+this.ufoDestoryCount){
             this.enemyNumber++
         }
+        console.log("enemyNumber",this.enemyNumber)
         for(let i=this.enemyCount;i<this.enemyNumber;i++){
             this.makeNewEnemy()
         }
     },
     ufoDestory(){
         this.main.getComponent("main").gainScore(200)
-        this.maxEnemyNumber++
+        this.maxMosterNumber
+        this.ufoCount--
+        this.ufoDestoryCount++
+        this.makeNewEnemy()
     }
 });

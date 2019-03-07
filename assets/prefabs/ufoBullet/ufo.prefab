@@ -32,7 +32,7 @@
         "__id__": 5
       },
       {
-        "__id__": 6
+        "__id__": 9
       }
     ],
     "_prefab": {
@@ -172,21 +172,6 @@
     "_id": ""
   },
   {
-    "__type__": "68769imlf5KgKAznul1GNsS",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "moveTime": 20,
-    "positionY": 400,
-    "gift": {
-      "__uuid__": "c00d12d0-badf-431f-9a48-a2e6f10d7a5a"
-    },
-    "_id": ""
-  },
-  {
     "__type__": "33dcepG9u1EaJ42KLq78xER",
     "_name": "",
     "_objFlags": 0,
@@ -194,41 +179,43 @@
       "__id__": 1
     },
     "_enabled": true,
-    "HP": 1,
+    "HP": 100,
     "boom_prefab": {
       "__uuid__": "06809c07-2aed-49aa-a659-271761a70ac1"
     },
     "enemyBulletSetting": [
       {
+        "__id__": 6
+      },
+      {
         "__id__": 7
       },
       {
         "__id__": 8
-      },
-      {
-        "__id__": 9
       }
     ],
-    "freqTime": 6.6,
+    "freqTime": 0,
     "_id": ""
   },
   {
     "__type__": "bulletSetting",
-    "startAxis": -75,
-    "endAxis": 75,
+    "startAxis": 0,
+    "endAxis": 360,
     "enemyBulletPrefab": {
       "__uuid__": "628b3d8b-04c9-4c11-b672-c379050e6cf0"
     },
-    "eachNumber": 5
+    "eachNumber": 20,
+    "freqTime": 1
   },
   {
     "__type__": "bulletSetting",
-    "startAxis": -180,
-    "endAxis": 180,
+    "startAxis": 0,
+    "endAxis": 360,
     "enemyBulletPrefab": {
       "__uuid__": "24c8d15e-38fa-4883-83ce-c7ebbe4ead8c"
     },
-    "eachNumber": 8
+    "eachNumber": 15,
+    "freqTime": 3
   },
   {
     "__type__": "bulletSetting",
@@ -237,7 +224,25 @@
     "enemyBulletPrefab": {
       "__uuid__": "38c0146e-fa44-41ed-bbfa-75d6da3e94d4"
     },
-    "eachNumber": 15
+    "eachNumber": 10,
+    "freqTime": 12
+  },
+  {
+    "__type__": "68769imlf5KgKAznul1GNsS",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "moveTime": 5,
+    "positionY": 250,
+    "gift": {
+      "__uuid__": "c00d12d0-badf-431f-9a48-a2e6f10d7a5a"
+    },
+    "actionFreqTime": 39,
+    "actionTime": 32,
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",

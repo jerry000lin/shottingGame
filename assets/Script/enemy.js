@@ -14,6 +14,9 @@ var bulletSetting = cc.Class({
         },
         eachNumber:{
             default:30
+        },
+        freqTime:{
+            default:0
         }
     }
 }); 
@@ -32,16 +35,22 @@ cc.Class({
         },
         freqTime:0,
     },
+    init(ufoDestroyCount){
+        this.HP = this.HP+ufoDestroyCount*100
+    },
     onLoad(){
         this.enemyGroup = this.node.parent.getComponent('enemyGroup');
         this.enemyBulletGroup = this.enemyGroup.enemyBulletGroup
-
-        this.schedule(this.addEnemyBullet, this.freqTime);
-    },
-    start(){
-        this.scheduleOnce(()=>{
-            this.addEnemyBullet()
-        }, 0.5+Math.random());
+        console.log("fetqTime:",this.freqTime)
+        if(this.freqTime!=0){
+            this.schedule(()=>{this.addEnemyBullet()},this.freqTime);
+        }else{
+            this.enemyBulletSetting.forEach(aSetting => {
+                this.schedule(()=>{
+                    this.addEnemyBullet(aSetting)
+                },aSetting.freqTime)
+            });
+        }
     },
     onCollisionEnter: function(other,self){
         if(other.node.group=="heroBullet"){
@@ -65,16 +74,17 @@ cc.Class({
         }
     },
     //批量生成子弹
-    addEnemyBullet(){
-        const randKey = Math.floor(Math.random() * this.enemyBulletSetting.length);
-        const enemyBulletSetting = this.enemyBulletSetting[randKey]
+    addEnemyBullet(enemyBulletSetting){
+        if(!enemyBulletSetting){
+            const randKey = Math.floor(Math.random() * this.enemyBulletSetting.length);
+            enemyBulletSetting = this.enemyBulletSetting[randKey]
+        }
 
         let rang = enemyBulletSetting.endAxis-enemyBulletSetting.startAxis
         var delRotation = rang/enemyBulletSetting.eachNumber
-        
 
         for (let i = 0; i < enemyBulletSetting.eachNumber; ++i) {
-            let newNode = this.newEnemyBullet(this.enemyBulletSetting[randKey].enemyBulletPrefab);
+            let newNode = this.newEnemyBullet(enemyBulletSetting.enemyBulletPrefab);
             newNode.rotation = enemyBulletSetting.startAxis+delRotation*i;
         }
     },

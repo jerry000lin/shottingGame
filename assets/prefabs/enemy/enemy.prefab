@@ -137,7 +137,7 @@
         "__id__": 7
       }
     ],
-    "freqTime": 1,
+    "freqTime": 5,
     "_id": ""
   },
   {
@@ -147,7 +147,8 @@
     "enemyBulletPrefab": {
       "__uuid__": "7b325cdd-83c4-44c5-a9be-890162f138bb"
     },
-    "eachNumber": 20
+    "eachNumber": 20,
+    "freqTime": 0
   },
   {
     "__type__": "bulletSetting",
@@ -156,7 +157,8 @@
     "enemyBulletPrefab": {
       "__uuid__": "c7386716-8be1-4eca-bb7d-7f185f33a842"
     },
-    "eachNumber": 8
+    "eachNumber": 8,
+    "freqTime": 0
   },
   {
     "__type__": "bulletSetting",
@@ -165,7 +167,8 @@
     "enemyBulletPrefab": {
       "__uuid__": "082e4cc3-f1c2-494c-8824-dc71ab1d9da3"
     },
-    "eachNumber": 20
+    "eachNumber": 20,
+    "freqTime": 0
   },
   {
     "__type__": "bulletSetting",
@@ -174,7 +177,8 @@
     "enemyBulletPrefab": {
       "__uuid__": "f03658fa-7646-46fc-88b2-7b63e311906d"
     },
-    "eachNumber": 20
+    "eachNumber": 20,
+    "freqTime": 0
   },
   {
     "__type__": "cc.PolygonCollider",

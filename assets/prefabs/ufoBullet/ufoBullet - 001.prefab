@@ -429,10 +429,9 @@
       "__id__": 1
     },
     "_enabled": true,
-    "wStart": 0,
-    "wSpeed": 5,
+    "wSpeed": 0,
     "rStart": 50,
-    "rSpeed": 50,
+    "rSpeed": 80,
     "_id": ""
   },
   {
