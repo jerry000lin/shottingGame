@@ -12,7 +12,8 @@ cc.Class({
         this.moveAction = this.setMoveAction()
         this.node.runAction(this.moveAction);
 
-        this.node.on("mosterDestory",()=>{
+        this.node.on("enemyDestory",()=>{
+            console.log("ufo destroy")
             this.addGift()
             this.node.parent.getComponent("enemyGroup").ufoDestory()
         })

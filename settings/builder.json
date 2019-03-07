@@ -7,7 +7,7 @@
     "scheme": "https",
     "skipRecord": false
   },
-  "encryptJs": true,
+  "encryptJs": false,
   "excludeScenes": [],
   "fb-instant-games": {},
   "includeSDKBox": false,

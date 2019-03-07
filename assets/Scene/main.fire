@@ -573,7 +573,7 @@
       "__id__": 9
     },
     "maxEnemyNumber": 5,
-    "ufoMakingTime": 50,
+    "ufoMakingTime": 5,
     "main": {
       "__id__": 3
     },

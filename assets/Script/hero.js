@@ -46,6 +46,7 @@ cc.Class({
     
     giftGetting(){
         if(this.heroLevel > this.heroLevelMax){
+            this.node.parent.getComponent("main").gainScore(666)
             return
         }
         this.heroLevel ++
@@ -58,6 +59,8 @@ cc.Class({
 
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+
+        this.onDrag();
 
         this.schedule(this.addheroBullet, this.bulletFreqTime);
     },
@@ -77,7 +80,6 @@ cc.Class({
                 break;
         }
     },
-
     onKeyUp: function (event) {
         switch(event.keyCode) {
             case cc.macro.KEY.w:
@@ -94,6 +96,39 @@ cc.Class({
                 break;
         }
     },
+
+    //添加拖动监听
+    onDrag: function(){
+        this.node.on('touchmove', this.dragMove, this);
+    },
+    //去掉拖动监听
+    offDrag: function(){ 
+         this.node.off('touchmove', this.dragMove, this);
+    },
+    //拖动
+    dragMove: function(event){ 
+        var locationv = event.getLocation();
+        var location = this.node.parent.convertToNodeSpaceAR(locationv);
+        //飞机不移出屏幕 
+        var minX = -this.node.parent.width/2+this.node.width/2;
+        var maxX = -minX;
+        var minY = -this.node.parent.height/2+this.node.height/2;
+        var maxY = -minY;
+        if (location.x< minX){
+            location.x = minX;
+        }
+        if (location.x>maxX){
+            location.x = maxX;
+        }
+        if (location.y< minY){
+            location.y = minY;
+        }
+        if (location.y> maxY){
+            location.y = maxY;
+        }
+        this.node.setPosition(location);
+    },
+
     update: function (dt) {
         if(this.moveUp){
             this.node.y += this.heroSpeed * dt;
@@ -150,4 +185,7 @@ cc.Class({
             cc.director.loadScene('end');
         },1000)
     },
+    onDestroy(){
+        this.offDrag()
+    }
 });
