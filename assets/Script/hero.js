@@ -147,7 +147,7 @@ cc.Class({
         this.boomFxNode.destroy()
         this.node.destroy()
         setTimeout(()=>{
-            cc.director.loadScene('start');
+            cc.director.loadScene('end');
         },1000)
     },
 });

@@ -42,7 +42,26 @@
   ],
   "design-resolution-height": 960,
   "design-resolution-width": 640,
-  "excluded-modules": [],
+  "excluded-modules": [
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "VideoPlayer",
+    "Audio",
+    "AudioSource",
+    "Physics",
+    "NodePool",
+    "StudioComponent",
+    "Native NetWork"
+  ],
   "facebook": {
     "appID": "",
     "audience": {
@@ -63,13 +82,13 @@
     "enemyBullet",
     "gift"
   ],
-  "last-module-event-record-time": 0,
+  "last-module-event-record-time": 1551938041003,
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,
     "width": 960
   },
+  "start-scene": "ae84aa08-0e4d-4822-8e1b-368a75d99765",
   "use-customize-simulator": false,
-  "use-project-simulator-setting": false,
-  "start-scene": "current"
+  "use-project-simulator-setting": false
 }

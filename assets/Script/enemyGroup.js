@@ -50,7 +50,7 @@ cc.Class({
         var y = (this.node.height+newEnemyNode.height)/2;
         return cc.v2(randx,y);
     },
-    enemyDestory(){
+    mosterDestory(){
         this.main.getComponent("main").gainScore(100)
         this.enemyCount--
         if(this.enemyNumber<this.maxEnemyNumber){

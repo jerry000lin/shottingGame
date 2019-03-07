@@ -11,6 +11,11 @@ cc.Class({
     onLoad(){
         this.moveAction = this.setMoveAction()
         this.node.runAction(this.moveAction);
+
+        this.node.on("mosterDestory",()=>{
+            this.addGift()
+            this.node.parent.getComponent("enemyGroup").ufoDestory()
+        })
     },
     setMoveAction: function () {
         var moveLeft = cc.moveTo(this.moveTime/2, cc.v2(-this.node.parent.width/2, this.positionY));
@@ -23,10 +28,5 @@ cc.Class({
         gift.setPosition(this.node.position)
         this.node.parent.addChild(gift)
 
-    },
-    onDestroy(){
-        this.addGift()
-        this.node.parent.getComponent("enemyGroup").ufoDestory()
-        
     }
 });

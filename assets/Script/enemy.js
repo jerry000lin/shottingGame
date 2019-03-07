@@ -88,6 +88,7 @@ cc.Class({
     onFinished: function(event) {
         this.boomFxNode.destroy()
         this.unscheduleAllCallbacks();
-        this.node.destroy()
+        console.log("boomfinish")
+        this.node.emit("enemyDestory")
     },
 });

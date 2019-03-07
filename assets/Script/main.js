@@ -18,4 +18,7 @@ cc.Class({
         this.scoreDisplay.getComponent(cc.Label).string = "Score:"+this.score;
         console.log(this.scoreDisplay.string)
     },
+    onDestroy(){
+        window.score = this.score
+    }
 });
